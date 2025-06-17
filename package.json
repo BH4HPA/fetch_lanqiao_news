@@ -1,0 +1,26 @@
+{
+  "name": "fetch-lanqiao-news",
+  "version": "1.0.0",
+  "description": "Fetches news from Lanqiao and sends Bark notifications for new items.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^24.0.3",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {},
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
