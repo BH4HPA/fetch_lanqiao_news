@@ -1,5 +1,9 @@
 # 蓝桥杯新闻速递
 
+![Apple Watch](https://s2.loli.net/2025/06/17/U3aEo1PXZnr7kRO.png)
+
+![iPhone](https://s2.loli.net/2025/06/17/5Swni8b3jVXUtPc.jpg)
+
 本项目是一个 Node.js TypeScript 应用，用于定时从蓝桥杯官网拉取最新的新闻资讯，并通过 Bark 推送给用户。
 
 ## 功能
@@ -34,9 +38,12 @@
 
 ## 配置
 
-Bark 推送地址通过环境变量 `BARK_URL` 进行配置。你也可以直接修改 `src/index.ts` 文件中的 `BARK_URL` 常量作为备选方案。
+Bark 推送地址通过环境变量 `BARK_URL` 进行配置。
 
-**推荐方式：使用环境变量**
+> 没有 BARK_URL ？
+> 前往 App Store 下载 Bark 应用，打开应用后即可查看你的 BARK_URL。
+
+![Bark App](https://s2.loli.net/2025/06/17/yzuFIvPxEMcmwZo.png)
 
 在运行应用前设置 `BARK_URL` 环境变量：
 ```bash
