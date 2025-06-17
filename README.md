@@ -46,18 +46,10 @@ export BARK_URL="https://api.day.app/YOUR_BARK_KEY_HERE"
 ```bash
 BARK_URL="https://api.day.app/YOUR_BARK_KEY_HERE" yarn start
 ```
-
-**备选方式：直接修改代码**
-
-1. 打开 `src/index.ts` 文件。
-2. 找到 `BARK_URL` 常量的定义。
-   ```typescript
-   // src/index.ts
-   // ...
-   const BARK_URL: string = process.env.BARK_URL || 'https://api.day.app/J9KA5TwfJZKG4dQEXXnUTK'; // Fallback to the existing URL if env var is not set
-   // ...
-   ```
-   你可以修改此处的备选 URL `'https://api.day.app/J9KA5TwfJZKG4dQEXXnUTK'` 为你的实际 Bark 推送地址。如果设置了 `BARK_URL` 环境变量，则会优先使用环境变量的值。
+也支持直接放在 `.env` 文件中
+```
+BARK_URL="https://api.day.app/YOUR_BARK_KEY_HERE"
+```
 
 ## 运行
 
@@ -69,11 +61,7 @@ yarn dev
 
 ### 生产模式
 
-1. 构建 TypeScript 代码：
-   ```bash
-   yarn build
-   ```
-2. 运行构建后的 JavaScript 代码：
+构建 TypeScript 代码并运行构建后的 JavaScript 代码：
    ```bash
    yarn start
    ```
